@@ -1,0 +1,11 @@
+#7.5_1
+@startuml
+Person <|..|>  Department
+ClientClass ..|> Person
+ClientClass ..|> Department
+together {
+ Person -[hidden]> Department
+}
+Person : department()
+Department : manager()
+@enduml
