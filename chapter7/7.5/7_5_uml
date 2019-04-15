@@ -1,4 +1,4 @@
-#7.5_1
+#7_5_01
 @startuml
 Person <|..|>  Department
 ClientClass ..|> Person
@@ -9,3 +9,5 @@ together {
 Person : department()
 Department : manager()
 @enduml
+
+#7_5_02
