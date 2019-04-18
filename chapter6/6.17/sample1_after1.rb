@@ -1,0 +1,5 @@
+[:failure, :error, :success].each do |method|
+  define_method method do
+    self.state = method
+  end
+end
