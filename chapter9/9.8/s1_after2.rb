@@ -2,8 +2,17 @@ class Site
   attr_reader :customer
 end
 
+class MissingCustomer
+  def missing?; true; end
+end
+
+module Nullable
+  def missing?; false; end
+end
+
 class Customer
   attr_reader :name, :plan, :history
+  include Nullable
 end
 
 class PaymentHistory

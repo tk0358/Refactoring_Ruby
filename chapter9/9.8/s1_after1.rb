@@ -2,8 +2,14 @@ class Site
   attr_reader :customer
 end
 
+class MissingCustomer
+  def missing?; true; end
+end
+
 class Customer
   attr_reader :name, :plan, :history
+
+  def missing?; false; end
 end
 
 class PaymentHistory
