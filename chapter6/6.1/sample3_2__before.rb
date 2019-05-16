@@ -1,4 +1,4 @@
-def print_owing
+def print_owing(previous_amount)
   outstanding = previous_amount * 1.2
 
   print_banner

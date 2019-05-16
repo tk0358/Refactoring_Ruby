@@ -1,0 +1,1 @@
+manager_offices = employees.select {|e| e.manager?}.map{|e| e.office}

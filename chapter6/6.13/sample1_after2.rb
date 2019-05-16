@@ -1,6 +1,6 @@
 module CustomInitializers
 
-  def self.hash_initializer(*attribute_names)
+  def hash_initializer(*attribute_names)
     define_method(:initialize) do |*args|
       data = args.first || {}
       attribute_names.each do |attribute_name|
